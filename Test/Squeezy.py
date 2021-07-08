@@ -6,7 +6,7 @@ class Squeezy:
     #Constructor to initiate instance variable definitons 
     def __init__(self):
         
-        self.sender = 'mball8487@gmail.com'
+        self.sender = 'EMAIL@gmail.com'
         self.svrnm = 'smtp.gmail.com'
         self.port = '587'
         #self.port = '465' # for secure messages
@@ -37,7 +37,7 @@ class Squeezy:
             server.starttls() # this is for secure reason
 
         #Login to gmail account to send email from
-        server.login(self.sender, "ThUnder5544$%")
+        server.login(self.sender, "PASSWORD_HERE")
         #Send email
         server.send_message(msg)
         #Close server connection
